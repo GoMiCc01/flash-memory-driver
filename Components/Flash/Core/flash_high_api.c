@@ -21,8 +21,8 @@ flash_handle* createEntity(SPI_HandleTypeDef* hspi, uint16_t cs_pin , GPIO_TypeD
 		}
 	}
 	return new_flash;
-};
+}
 
-flash_status_t flash_init(flash_handle* flash_handle){};
+flash_status_t flash_init(flash_handle* flash_handle){}
 
 
