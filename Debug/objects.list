@@ -1,4 +1,5 @@
-"./Components/Flash/Core/high_api.o"
+"./Components/Flash/Core/flash_high_api.o"
+"./Components/Flash/Core/flash_low_api.o"
 "./Core/Src/main.o"
 "./Core/Src/stm32g0xx_hal_msp.o"
 "./Core/Src/stm32g0xx_it.o"
