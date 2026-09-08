@@ -5,13 +5,16 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../Components/Flash/Core/high_api.c 
+../Components/Flash/Core/flash_high_api.c \
+../Components/Flash/Core/flash_low_api.c 
 
 OBJS += \
-./Components/Flash/Core/high_api.o 
+./Components/Flash/Core/flash_high_api.o \
+./Components/Flash/Core/flash_low_api.o 
 
 C_DEPS += \
-./Components/Flash/Core/high_api.d 
+./Components/Flash/Core/flash_high_api.d \
+./Components/Flash/Core/flash_low_api.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
@@ -21,7 +24,7 @@ Components/Flash/Core/%.o Components/Flash/Core/%.su Components/Flash/Core/%.cyc
 clean: clean-Components-2f-Flash-2f-Core
 
 clean-Components-2f-Flash-2f-Core:
-	-$(RM) ./Components/Flash/Core/high_api.cyclo ./Components/Flash/Core/high_api.d ./Components/Flash/Core/high_api.o ./Components/Flash/Core/high_api.su
+	-$(RM) ./Components/Flash/Core/flash_high_api.cyclo ./Components/Flash/Core/flash_high_api.d ./Components/Flash/Core/flash_high_api.o ./Components/Flash/Core/flash_high_api.su ./Components/Flash/Core/flash_low_api.cyclo ./Components/Flash/Core/flash_low_api.d ./Components/Flash/Core/flash_low_api.o ./Components/Flash/Core/flash_low_api.su
 
 .PHONY: clean-Components-2f-Flash-2f-Core
 

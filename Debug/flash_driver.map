@@ -57,26 +57,220 @@ Discarded input sections
  .ARM.exidx     0x00000000       0x10 /opt/st/stm32cubeide_2.1.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
  .ARM.attributes
                 0x00000000       0x1b /opt/st/stm32cubeide_2.1.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
- .group         0x00000000        0xc ./Components/Flash/Core/high_api.o
- .text          0x00000000        0x0 ./Components/Flash/Core/high_api.o
- .data          0x00000000        0x0 ./Components/Flash/Core/high_api.o
- .bss           0x00000000        0x0 ./Components/Flash/Core/high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_high_api.o
+ .text          0x00000000        0x0 ./Components/Flash/Core/flash_high_api.o
+ .data          0x00000000        0x0 ./Components/Flash/Core/flash_high_api.o
+ .bss           0x00000000        0x0 ./Components/Flash/Core/flash_high_api.o
+ .rodata.CHANNEL_OFFSET_TAB
+                0x00000000        0x5 ./Components/Flash/Core/flash_high_api.o
+ .bss.flash_entity
+                0x00000000       0x24 ./Components/Flash/Core/flash_high_api.o
+ .bss.device_count
+                0x00000000        0x1 ./Components/Flash/Core/flash_high_api.o
+ .text.createEntity
+                0x00000000       0x70 ./Components/Flash/Core/flash_high_api.o
  .text.flash_init
-                0x00000000        0xc ./Components/Flash/Core/high_api.o
- .debug_info    0x00000000       0x6f ./Components/Flash/Core/high_api.o
- .debug_abbrev  0x00000000       0x67 ./Components/Flash/Core/high_api.o
+                0x00000000       0x12 ./Components/Flash/Core/flash_high_api.o
+ .debug_info    0x00000000      0x84e ./Components/Flash/Core/flash_high_api.o
+ .debug_abbrev  0x00000000      0x181 ./Components/Flash/Core/flash_high_api.o
  .debug_aranges
-                0x00000000       0x20 ./Components/Flash/Core/high_api.o
+                0x00000000       0x28 ./Components/Flash/Core/flash_high_api.o
  .debug_rnglists
-                0x00000000       0x13 ./Components/Flash/Core/high_api.o
- .debug_macro   0x00000000       0x15 ./Components/Flash/Core/high_api.o
- .debug_macro   0x00000000      0xaae ./Components/Flash/Core/high_api.o
- .debug_line    0x00000000       0x7c ./Components/Flash/Core/high_api.o
- .debug_str     0x00000000     0x2de4 ./Components/Flash/Core/high_api.o
- .comment       0x00000000       0x44 ./Components/Flash/Core/high_api.o
- .debug_frame   0x00000000       0x2c ./Components/Flash/Core/high_api.o
+                0x00000000       0x19 ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000      0x1e9 ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000      0xaae ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000      0x117 ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000       0x2e ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000       0x28 ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000       0x22 ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000       0x8e ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000       0x51 ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000      0x103 ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000       0x6a ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000      0x1df ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000       0x1c ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000       0x22 ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000       0xd1 ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000      0x4da ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000      0x11f ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000     0xa120 ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000       0x66 ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000     0x3512 ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000      0x190 ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000       0x5c ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000      0x462 ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000      0xe1a ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000      0x106 ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000      0x1cf ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000       0xff ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000      0x33c ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000      0x202 ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000      0x2c7 ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000      0x198 ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000       0x43 ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000      0x1f1 ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000      0x1d6 ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000      0x2a3 ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000       0x28 ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000       0xcf ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000       0xff ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000      0x10d ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000      0x305 ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000      0x412 ./Components/Flash/Core/flash_high_api.o
+ .debug_macro   0x00000000       0x10 ./Components/Flash/Core/flash_high_api.o
+ .debug_line    0x00000000      0x720 ./Components/Flash/Core/flash_high_api.o
+ .debug_str     0x00000000    0x7703c ./Components/Flash/Core/flash_high_api.o
+ .comment       0x00000000       0x44 ./Components/Flash/Core/flash_high_api.o
+ .debug_frame   0x00000000       0x50 ./Components/Flash/Core/flash_high_api.o
  .ARM.attributes
-                0x00000000       0x2c ./Components/Flash/Core/high_api.o
+                0x00000000       0x2c ./Components/Flash/Core/flash_high_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
+ .text          0x00000000        0x0 ./Components/Flash/Core/flash_low_api.o
+ .data          0x00000000        0x0 ./Components/Flash/Core/flash_low_api.o
+ .bss           0x00000000        0x0 ./Components/Flash/Core/flash_low_api.o
+ .rodata.CHANNEL_OFFSET_TAB
+                0x00000000        0x5 ./Components/Flash/Core/flash_low_api.o
+ .text.flash_cmd
+                0x00000000       0x6e ./Components/Flash/Core/flash_low_api.o
+ .text.flash_cmd_adr
+                0x00000000       0x9a ./Components/Flash/Core/flash_low_api.o
+ .text.flash_transmit_data
+                0x00000000       0xc6 ./Components/Flash/Core/flash_low_api.o
+ .text.flash_receive_data
+                0x00000000       0xc6 ./Components/Flash/Core/flash_low_api.o
+ .debug_info    0x00000000      0xa2a ./Components/Flash/Core/flash_low_api.o
+ .debug_abbrev  0x00000000      0x1cc ./Components/Flash/Core/flash_low_api.o
+ .debug_aranges
+                0x00000000       0x38 ./Components/Flash/Core/flash_low_api.o
+ .debug_rnglists
+                0x00000000       0x28 ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000      0x1ec ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000      0xaae ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000      0x117 ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000       0x2e ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000       0x28 ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000       0x22 ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000       0x8e ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000       0x51 ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000      0x103 ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000       0x6a ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000      0x1df ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000       0x1c ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000       0x22 ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000       0xd1 ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000      0x4da ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000      0x11f ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000     0xa120 ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000       0x66 ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000     0x3512 ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000      0x190 ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000       0x5c ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000      0x462 ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000      0xe1a ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000      0x106 ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000      0x1cf ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000       0xff ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000      0x33c ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000      0x202 ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000      0x2c7 ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000      0x198 ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000       0x43 ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000      0x1f1 ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000      0x1d6 ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000      0x2a3 ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000       0x28 ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000       0xcf ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000       0xff ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000      0x10d ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000      0x305 ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000      0x412 ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000       0x10 ./Components/Flash/Core/flash_low_api.o
+ .debug_macro   0x00000000       0x10 ./Components/Flash/Core/flash_low_api.o
+ .debug_line    0x00000000      0x805 ./Components/Flash/Core/flash_low_api.o
+ .debug_str     0x00000000    0x7710e ./Components/Flash/Core/flash_low_api.o
+ .comment       0x00000000       0x44 ./Components/Flash/Core/flash_low_api.o
+ .debug_frame   0x00000000       0x90 ./Components/Flash/Core/flash_low_api.o
+ .ARM.attributes
+                0x00000000       0x2c ./Components/Flash/Core/flash_low_api.o
  .group         0x00000000        0xc ./Core/Src/main.o
  .group         0x00000000        0xc ./Core/Src/main.o
  .group         0x00000000        0xc ./Core/Src/main.o
@@ -123,6 +317,45 @@ Discarded input sections
  .rodata.CHANNEL_OFFSET_TAB
                 0x00000000        0x5 ./Core/Src/main.o
  .debug_macro   0x00000000      0xaae ./Core/Src/main.o
+ .debug_macro   0x00000000      0x117 ./Core/Src/main.o
+ .debug_macro   0x00000000       0x2e ./Core/Src/main.o
+ .debug_macro   0x00000000       0x28 ./Core/Src/main.o
+ .debug_macro   0x00000000       0x22 ./Core/Src/main.o
+ .debug_macro   0x00000000       0x8e ./Core/Src/main.o
+ .debug_macro   0x00000000       0x51 ./Core/Src/main.o
+ .debug_macro   0x00000000      0x103 ./Core/Src/main.o
+ .debug_macro   0x00000000       0x6a ./Core/Src/main.o
+ .debug_macro   0x00000000      0x1df ./Core/Src/main.o
+ .debug_macro   0x00000000       0x1c ./Core/Src/main.o
+ .debug_macro   0x00000000       0x22 ./Core/Src/main.o
+ .debug_macro   0x00000000       0xd1 ./Core/Src/main.o
+ .debug_macro   0x00000000      0x4da ./Core/Src/main.o
+ .debug_macro   0x00000000      0x11f ./Core/Src/main.o
+ .debug_macro   0x00000000     0xa120 ./Core/Src/main.o
+ .debug_macro   0x00000000       0x66 ./Core/Src/main.o
+ .debug_macro   0x00000000     0x3512 ./Core/Src/main.o
+ .debug_macro   0x00000000      0x190 ./Core/Src/main.o
+ .debug_macro   0x00000000       0x5c ./Core/Src/main.o
+ .debug_macro   0x00000000      0x462 ./Core/Src/main.o
+ .debug_macro   0x00000000      0xe1a ./Core/Src/main.o
+ .debug_macro   0x00000000      0x106 ./Core/Src/main.o
+ .debug_macro   0x00000000      0x1cf ./Core/Src/main.o
+ .debug_macro   0x00000000       0xff ./Core/Src/main.o
+ .debug_macro   0x00000000      0x33c ./Core/Src/main.o
+ .debug_macro   0x00000000      0x202 ./Core/Src/main.o
+ .debug_macro   0x00000000      0x2c7 ./Core/Src/main.o
+ .debug_macro   0x00000000      0x198 ./Core/Src/main.o
+ .debug_macro   0x00000000       0x43 ./Core/Src/main.o
+ .debug_macro   0x00000000      0x1f1 ./Core/Src/main.o
+ .debug_macro   0x00000000      0x1d6 ./Core/Src/main.o
+ .debug_macro   0x00000000      0x2a3 ./Core/Src/main.o
+ .debug_macro   0x00000000       0x28 ./Core/Src/main.o
+ .debug_macro   0x00000000       0xcf ./Core/Src/main.o
+ .debug_macro   0x00000000       0xff ./Core/Src/main.o
+ .debug_macro   0x00000000      0x10d ./Core/Src/main.o
+ .debug_macro   0x00000000      0x305 ./Core/Src/main.o
+ .debug_macro   0x00000000      0x412 ./Core/Src/main.o
+ .debug_macro   0x00000000       0x10 ./Core/Src/main.o
  .group         0x00000000        0xc ./Core/Src/stm32g0xx_hal_msp.o
  .group         0x00000000        0xc ./Core/Src/stm32g0xx_hal_msp.o
  .group         0x00000000        0xc ./Core/Src/stm32g0xx_hal_msp.o
@@ -2538,7 +2771,8 @@ Linker script and memory map
 LOAD /opt/st/stm32cubeide_2.1.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crti.o
 LOAD /opt/st/stm32cubeide_2.1.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/thumb/v6-m/nofp/crtbegin.o
 LOAD /opt/st/stm32cubeide_2.1.1/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.14.3.rel1.linux64_1.0.100.202602081740/tools/bin/../lib/gcc/arm-none-eabi/14.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/crt0.o
-LOAD ./Components/Flash/Core/high_api.o
+LOAD ./Components/Flash/Core/flash_high_api.o
+LOAD ./Components/Flash/Core/flash_low_api.o
 LOAD ./Core/Src/main.o
 LOAD ./Core/Src/stm32g0xx_hal_msp.o
 LOAD ./Core/Src/stm32g0xx_it.o
@@ -2975,69 +3209,30 @@ LOAD /opt/st/stm32cubeide_2.1.1/plugins/com.st.stm32cube.ide.mcu.externaltools.g
  .debug_rnglists
                 0x00000341      0x179 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.o
 
-.debug_macro    0x00000000    0x128be
+.debug_macro    0x00000000     0x12b4
  .debug_macro   0x00000000      0x1df ./Core/Src/main.o
- .debug_macro   0x000001df      0x117 ./Core/Src/main.o
- .debug_macro   0x000002f6       0x2e ./Core/Src/main.o
- .debug_macro   0x00000324       0x28 ./Core/Src/main.o
- .debug_macro   0x0000034c       0x22 ./Core/Src/main.o
- .debug_macro   0x0000036e       0x8e ./Core/Src/main.o
- .debug_macro   0x000003fc       0x51 ./Core/Src/main.o
- .debug_macro   0x0000044d      0x103 ./Core/Src/main.o
- .debug_macro   0x00000550       0x6a ./Core/Src/main.o
- .debug_macro   0x000005ba      0x1df ./Core/Src/main.o
- .debug_macro   0x00000799       0x1c ./Core/Src/main.o
- .debug_macro   0x000007b5       0x22 ./Core/Src/main.o
- .debug_macro   0x000007d7       0xd1 ./Core/Src/main.o
- .debug_macro   0x000008a8      0x4da ./Core/Src/main.o
- .debug_macro   0x00000d82      0x11f ./Core/Src/main.o
- .debug_macro   0x00000ea1     0xa120 ./Core/Src/main.o
- .debug_macro   0x0000afc1       0x66 ./Core/Src/main.o
- .debug_macro   0x0000b027     0x3512 ./Core/Src/main.o
- .debug_macro   0x0000e539      0x190 ./Core/Src/main.o
- .debug_macro   0x0000e6c9       0x5c ./Core/Src/main.o
- .debug_macro   0x0000e725      0x462 ./Core/Src/main.o
- .debug_macro   0x0000eb87      0xe1a ./Core/Src/main.o
- .debug_macro   0x0000f9a1      0x106 ./Core/Src/main.o
- .debug_macro   0x0000faa7      0x1cf ./Core/Src/main.o
- .debug_macro   0x0000fc76       0xff ./Core/Src/main.o
- .debug_macro   0x0000fd75      0x33c ./Core/Src/main.o
- .debug_macro   0x000100b1      0x202 ./Core/Src/main.o
- .debug_macro   0x000102b3      0x2c7 ./Core/Src/main.o
- .debug_macro   0x0001057a      0x198 ./Core/Src/main.o
- .debug_macro   0x00010712       0x43 ./Core/Src/main.o
- .debug_macro   0x00010755      0x1f1 ./Core/Src/main.o
- .debug_macro   0x00010946      0x1d6 ./Core/Src/main.o
- .debug_macro   0x00010b1c      0x2a3 ./Core/Src/main.o
- .debug_macro   0x00010dbf       0x28 ./Core/Src/main.o
- .debug_macro   0x00010de7       0xcf ./Core/Src/main.o
- .debug_macro   0x00010eb6       0xff ./Core/Src/main.o
- .debug_macro   0x00010fb5      0x10d ./Core/Src/main.o
- .debug_macro   0x000110c2      0x305 ./Core/Src/main.o
- .debug_macro   0x000113c7      0x412 ./Core/Src/main.o
- .debug_macro   0x000117d9       0x10 ./Core/Src/main.o
- .debug_macro   0x000117e9      0x1db ./Core/Src/stm32g0xx_hal_msp.o
- .debug_macro   0x000119c4      0x1e5 ./Core/Src/stm32g0xx_it.o
- .debug_macro   0x00011ba9      0x1cc ./Core/Src/system_stm32g0xx.o
- .debug_macro   0x00011d75      0x1ea ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.o
- .debug_macro   0x00011f5f      0x1cc ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.o
- .debug_macro   0x0001212b      0x1d3 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.o
- .debug_macro   0x000122fe      0x1de ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.o
- .debug_macro   0x000124dc      0x20e ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.o
- .debug_macro   0x000126ea      0x1d4 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.o
+ .debug_macro   0x000001df      0x1db ./Core/Src/stm32g0xx_hal_msp.o
+ .debug_macro   0x000003ba      0x1e5 ./Core/Src/stm32g0xx_it.o
+ .debug_macro   0x0000059f      0x1cc ./Core/Src/system_stm32g0xx.o
+ .debug_macro   0x0000076b      0x1ea ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.o
+ .debug_macro   0x00000955      0x1cc ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.o
+ .debug_macro   0x00000b21      0x1d3 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.o
+ .debug_macro   0x00000cf4      0x1de ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.o
+ .debug_macro   0x00000ed2      0x20e ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.o
+ .debug_macro   0x000010e0      0x1d4 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.o
 
-.debug_line     0x00000000     0x736a
- .debug_line    0x00000000      0x7b1 ./Core/Src/main.o
- .debug_line    0x000007b1      0x6ec ./Core/Src/stm32g0xx_hal_msp.o
- .debug_line    0x00000e9d      0x6fc ./Core/Src/stm32g0xx_it.o
- .debug_line    0x00001599      0x712 ./Core/Src/system_stm32g0xx.o
- .debug_line    0x00001cab       0x7b ./Core/Startup/startup_stm32g030f6px.o
- .debug_line    0x00001d26      0x9d8 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.o
- .debug_line    0x000026fe      0xaed ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.o
- .debug_line    0x000031eb      0xaa9 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.o
- .debug_line    0x00003c94      0x8e3 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.o
- .debug_line    0x00004577      0xf13 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.o
- .debug_line    0x0000548a     0x1ee0 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.o
+.debug_line     0x00000000     0x7370
+ .debug_line    0x00000000      0x7b7 ./Core/Src/main.o
+ .debug_line    0x000007b7      0x6ec ./Core/Src/stm32g0xx_hal_msp.o
+ .debug_line    0x00000ea3      0x6fc ./Core/Src/stm32g0xx_it.o
+ .debug_line    0x0000159f      0x712 ./Core/Src/system_stm32g0xx.o
+ .debug_line    0x00001cb1       0x7b ./Core/Startup/startup_stm32g030f6px.o
+ .debug_line    0x00001d2c      0x9d8 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal.o
+ .debug_line    0x00002704      0xaed ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_cortex.o
+ .debug_line    0x000031f1      0xaa9 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_gpio.o
+ .debug_line    0x00003c9a      0x8e3 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_pwr_ex.o
+ .debug_line    0x0000457d      0xf13 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_rcc.o
+ .debug_line    0x00005490     0x1ee0 ./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.o
 
 .debug_str      0x00000000    0x78561
  .debug_str     0x00000000    0x78561 ./Core/Src/main.o
