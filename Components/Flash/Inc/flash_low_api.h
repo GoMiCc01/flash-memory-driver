@@ -8,6 +8,8 @@ flash_status_t flash_cmd(flash_handle* flash, uint8_t cmd);
 
 flash_status_t flash_cmd_adr(flash_handle* flash, uint8_t cmd, uint32_t adr);
 
+flash_status_t flash_cmd_receive_data(flash_handle* flash, uint8_t cmd,uint8_t* data , uint16_t len);
+
 flash_status_t flash_transmit_data(flash_handle* flash,
 								  uint8_t cmd,
 								  uint32_t adr ,

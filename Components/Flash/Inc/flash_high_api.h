@@ -7,7 +7,8 @@ typedef enum
 	FLASH_OK,
 	FLASH_INVALID_PARAMETERS,
 	FLASH_TRANSMIT_ERROR,
-	FLASH_RECEIVE_ERROR
+	FLASH_RECEIVE_ERROR,
+	FLASH_UNKNOWN_DEVICE
 }flash_status_t;
 
 typedef struct flash_handles_t flash_handle;
