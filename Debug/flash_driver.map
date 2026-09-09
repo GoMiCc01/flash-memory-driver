@@ -110,20 +110,22 @@ Discarded input sections
                 0x00000000        0x1 ./Components/Flash/Core/flash_high_api.o
  .rodata.supported_devices
                 0x00000000       0x30 ./Components/Flash/Core/flash_high_api.o
+ .text.writeEnable
+                0x00000000       0x3e ./Components/Flash/Core/flash_high_api.o
  .text.getDeviceID
                 0x00000000       0x80 ./Components/Flash/Core/flash_high_api.o
  .text.flash_auto_detect
                 0x00000000       0xfc ./Components/Flash/Core/flash_high_api.o
  .text.createEntity
-                0x00000000       0x70 ./Components/Flash/Core/flash_high_api.o
+                0x00000000       0x84 ./Components/Flash/Core/flash_high_api.o
  .text.flash_init
                 0x00000000       0x62 ./Components/Flash/Core/flash_high_api.o
- .debug_info    0x00000000      0xa03 ./Components/Flash/Core/flash_high_api.o
- .debug_abbrev  0x00000000      0x1fd ./Components/Flash/Core/flash_high_api.o
+ .debug_info    0x00000000      0xa52 ./Components/Flash/Core/flash_high_api.o
+ .debug_abbrev  0x00000000      0x21a ./Components/Flash/Core/flash_high_api.o
  .debug_aranges
-                0x00000000       0x38 ./Components/Flash/Core/flash_high_api.o
+                0x00000000       0x40 ./Components/Flash/Core/flash_high_api.o
  .debug_rnglists
-                0x00000000       0x27 ./Components/Flash/Core/flash_high_api.o
+                0x00000000       0x2e ./Components/Flash/Core/flash_high_api.o
  .debug_macro   0x00000000      0x1fd ./Components/Flash/Core/flash_high_api.o
  .debug_macro   0x00000000      0xaae ./Components/Flash/Core/flash_high_api.o
  .debug_macro   0x00000000      0x117 ./Components/Flash/Core/flash_high_api.o
@@ -167,10 +169,10 @@ Discarded input sections
  .debug_macro   0x00000000       0x10 ./Components/Flash/Core/flash_high_api.o
  .debug_macro   0x00000000       0xd6 ./Components/Flash/Core/flash_high_api.o
  .debug_macro   0x00000000       0x10 ./Components/Flash/Core/flash_high_api.o
- .debug_line    0x00000000      0x82f ./Components/Flash/Core/flash_high_api.o
- .debug_str     0x00000000    0x775ad ./Components/Flash/Core/flash_high_api.o
+ .debug_line    0x00000000      0x85b ./Components/Flash/Core/flash_high_api.o
+ .debug_str     0x00000000    0x775c9 ./Components/Flash/Core/flash_high_api.o
  .comment       0x00000000       0x44 ./Components/Flash/Core/flash_high_api.o
- .debug_frame   0x00000000       0x94 ./Components/Flash/Core/flash_high_api.o
+ .debug_frame   0x00000000       0xb4 ./Components/Flash/Core/flash_high_api.o
  .ARM.attributes
                 0x00000000       0x2c ./Components/Flash/Core/flash_high_api.o
  .group         0x00000000        0xc ./Components/Flash/Core/flash_low_api.o
