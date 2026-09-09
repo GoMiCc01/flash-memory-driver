@@ -103,3 +103,26 @@ flash_status_t flash_receive_data(flash_handle* flash, uint8_t cmd, uint32_t adr
 	}
 	return retcode;
 }
+
+flash_status_t flash_cmd_receive_data(flash_handle* flash, uint8_t cmd,uint8_t* data , uint16_t len)
+{
+	flash_status_t retcode = FLASH_OK;
+	if(NULL == flash)
+	{
+		retcode = FLASH_INVALID_PARAMETERS;
+	}
+	else
+	{
+	HAL_GPIO_WritePin(flash->cs_port, flash->cs_pin, GPIO_PIN_RESET);
+	if(HAL_OK != HAL_SPI_Transmit(flash->hspi, &cmd, sizeof(cmd), FLASH_SPI_TIMEOUT_MS))
+	{
+		retcode = FLASH_TRANSMIT_ERROR;
+	}
+	if(HAL_OK != HAL_SPI_Receive(flash->hspi, data, len, FLASH_SPI_TIMEOUT_MS))
+	{
+		retcode = FLASH_RECEIVE_ERROR;
+	}
+	HAL_GPIO_WritePin(flash->cs_port, flash->cs_pin, GPIO_PIN_SET);
+	}
+	return retcode;
+}
