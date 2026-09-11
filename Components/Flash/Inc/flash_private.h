@@ -42,8 +42,8 @@ typedef struct
 {
 	uint8_t jedec_id [3];
 	uint32_t mem_capacity;
-	uint16_t page_size;
 	uint16_t min_erase_size;
+	uint16_t page_size;
 }flash_device_info_t;
 
 struct flash_handles_t
@@ -51,7 +51,7 @@ struct flash_handles_t
 	uint16_t cs_pin;
 	SPI_HandleTypeDef* hspi;
 	GPIO_TypeDef* cs_port;
-	uint16_t mem_capacity;
+	uint32_t mem_capacity;
 	uint16_t page_size;
 	uint16_t min_erase_size;
 };

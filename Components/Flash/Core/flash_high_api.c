@@ -13,7 +13,8 @@ static const flash_device_info_t supported_devices[] = {
     {{0xEF, 0x40, 0x18}, 16 * 1024 * 1024, 4096, 256}, // Winbond W25Q128
     {{0xEF, 0x40, 0x17},  8 * 1024 * 1024, 4096, 256}, // Winbond W25Q64
     {{0xEF, 0x40, 0x16},  4 * 1024 * 1024, 4096, 256}, // Winbond W25Q32
-    {{0xC2, 0x20, 0x16},  4 * 1024 * 1024, 4096, 256}  // Macronix MX25L32
+    {{0xC2, 0x20, 0x16},  4 * 1024 * 1024, 4096, 256},  // Macronix MX25L32
+    {{0xC8, 0x40, 0x16},  4 * 1024 * 1024, 4096, 256}  // GigaDevice GD25Q32
 };
 
 static flash_status_t flash_wait_ready(flash_handle* flash);
