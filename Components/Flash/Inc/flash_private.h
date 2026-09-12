@@ -1,6 +1,11 @@
 #pragma once
 #include "flash_high_api.h"
 
+/**
+ * @name SPI Flash Instruction Set
+ * @brief Standard command codes for NOR Flash memory operations.
+ * @{
+ */
 #define FLASH_CMD_WRITE_ENABLE                   0x06
 #define FLASH_CMD_VOLATILE_SR_WRITE_ENABLE       0x50
 #define FLASH_CMD_WRITE_DISABLE                  0x04
@@ -36,22 +41,28 @@
 #define FLASH_CMD_POWER_DOWN                     0xB9
 #define FLASH_CMD_ENABLE_RESET                   0x66
 #define FLASH_CMD_RESET_DEVICE                   0x99
+/** @} */
 
-
+/**
+ * @brief Internal structure for supported flash devices hardware parameters.
+ */
 typedef struct
 {
-	uint8_t jedec_id [3];
-	uint32_t mem_capacity;
-	uint16_t page_size;
-	uint16_t min_erase_size;
-}flash_device_info_t;
+	uint8_t jedec_id[3];     ///< 3-byte JEDEC Manufacturer and Device ID
+	uint32_t mem_capacity;   ///< Total memory capacity in bytes
+	uint16_t min_erase_size; ///< Minimum erase sector size (usually 4096 bytes)
+	uint16_t page_size;      ///< Page programming size (usually 256 bytes)
+} flash_device_info_t;
 
+/**
+ * @brief Flash device instance structure representing physical connections and active state.
+ */
 struct flash_handles_t
 {
-	uint16_t cs_pin;
-	SPI_HandleTypeDef* hspi;
-	GPIO_TypeDef* cs_port;
-	uint16_t mem_capacity;
-	uint16_t page_size;
-	uint16_t min_erase_size;
+	uint16_t cs_pin;         ///< Chip Select GPIO pin
+	SPI_HandleTypeDef* hspi; ///< Pointer to HAL SPI handle
+	GPIO_TypeDef* cs_port;   ///< Pointer to Chip Select GPIO port
+	uint32_t mem_capacity;   ///< Detected memory capacity of the connected chip
+	uint16_t page_size;      ///< Detected page size for writes
+	uint16_t min_erase_size; ///< Detected minimum erase block size
 };
