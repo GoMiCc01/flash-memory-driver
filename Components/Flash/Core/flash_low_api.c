@@ -53,18 +53,15 @@ flash_status_t flash_transmit_data(flash_handle* flash, uint8_t cmd, uint32_t ad
 	}
 	else
 	{
-		uint8_t transm_data [FLASH_ADDRESS_LEN];
+		uint8_t transm_data [FLASH_ADDRESS_LEN+flash->page_size];
 		transm_data[0] = cmd;
 		transm_data[1] = (adr >> 16)&0xFF;
 		transm_data[2] = (adr >> 8)&0xFF;
 		transm_data[3] = adr & 0xFF;
-		HAL_GPIO_WritePin(flash->cs_port, flash->cs_pin, GPIO_PIN_RESET);
-		if(HAL_OK != HAL_SPI_Transmit(flash->hspi, transm_data, sizeof(transm_data), FLASH_SPI_TIMEOUT_MS))
-		{
-			retcode = FLASH_TRANSMIT_ERROR;
-		}
+		memcpy(&transm_data[4], data, len);
 
-		if(HAL_OK != HAL_SPI_Transmit(flash->hspi, (uint8_t*)data, len, FLASH_SPI_TIMEOUT_MS))
+		HAL_GPIO_WritePin(flash->cs_port, flash->cs_pin, GPIO_PIN_RESET);
+		if(HAL_OK != HAL_SPI_Transmit(flash->hspi, transm_data, len+FLASH_ADDRESS_LEN, FLASH_SPI_TIMEOUT_MS))
 		{
 			retcode = FLASH_TRANSMIT_ERROR;
 		}

@@ -64,7 +64,7 @@ flash_status_t flash_init(flash_handle* flash)
 	return retcode;
 }
 
-flash_status_t flash_write_data(flash_handle* flash, uint8_t* write_buff, uint32_t buff_length, uint32_t adr)
+flash_status_t flash_write_data(flash_handle* flash, const uint8_t* write_buff, uint32_t buff_length, uint32_t adr)
 {
 	flash_status_t retcode = FLASH_OK;
 	if(NULL == flash || NULL == write_buff)
@@ -144,6 +144,12 @@ flash_status_t flash_erase_4kb(flash_handle* flash, uint32_t adr)
 	return retcode;
 }
 
+/**
+ * @brief Waits until the flash memory finishes its internal operation (e.g., erase or write).
+ *
+ * @param flash Pointer to the flash instance
+ * @return FLASH_OK if ready, FLASH_TIMEOUT_ERROR if the operation took too long
+ */
 static flash_status_t flash_wait_ready(flash_handle* flash)
 {
 	flash_status_t retcode = FLASH_OK;
@@ -173,6 +179,12 @@ static flash_status_t flash_wait_ready(flash_handle* flash)
 	return retcode;
 }
 
+/**
+ * @brief Sends the Write Enable (WEL) command to allow modifying the flash memory.
+ *
+ * @param flash Pointer to the flash instance
+ * @return FLASH_OK on success
+ */
 static flash_status_t writeEnable(flash_handle* flash)
 {
 	flash_status_t retcode = FLASH_OK;
@@ -187,6 +199,13 @@ static flash_status_t writeEnable(flash_handle* flash)
 	return retcode;
 }
 
+/**
+ * @brief Checks the Status Register to see if a write or erase cycle is in progress.
+ *
+ * @param flash   Pointer to the flash instance
+ * @param is_busy Pointer to store the busy state (true if busy, false if ready)
+ * @return FLASH_OK on success
+ */
 static flash_status_t is_device_busy(flash_handle* flash, bool* is_busy)
 {
 	flash_status_t retcode = FLASH_OK;
@@ -203,6 +222,13 @@ static flash_status_t is_device_busy(flash_handle* flash, bool* is_busy)
 	return retcode;
 }
 
+/**
+ * @brief Reads the 3-byte JEDEC ID from the flash chip.
+ *
+ * @param flash    Pointer to the flash instance
+ * @param jedec_id Buffer to store the retrieved ID
+ * @return FLASH_OK on success, FLASH_NOT_INITIALIZED if no chip is detected
+ */
 static flash_status_t getDeviceID(flash_handle* flash, uint8_t* jedec_id)
 {
 	flash_status_t retcode = FLASH_OK;
@@ -225,6 +251,13 @@ static flash_status_t getDeviceID(flash_handle* flash, uint8_t* jedec_id)
 	return retcode;
 }
 
+/**
+ * @brief Matches the read JEDEC ID against the supported devices list and sets memory parameters.
+ *
+ * @param flash        Pointer to the flash instance
+ * @param new_jedec_id The 3-byte ID read from the chip
+ * @return FLASH_OK if recognized, FLASH_UNKNOWN_DEVICE if the chip is not supported
+ */
 static flash_status_t flash_auto_detect(flash_handle* flash, uint8_t* new_jedec_id)
 {
 	flash_status_t retcode = FLASH_OK;
