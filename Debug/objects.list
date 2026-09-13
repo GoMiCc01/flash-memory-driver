@@ -1,3 +1,4 @@
+"./Components/Filesystem/lfs_port.o"
 "./Components/Flash/Core/flash_high_api.o"
 "./Components/Flash/Core/flash_low_api.o"
 "./Core/Src/main.o"
@@ -22,3 +23,5 @@
 "./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi.o"
 "./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_hal_spi_ex.o"
 "./Drivers/STM32G0xx_HAL_Driver/Src/stm32g0xx_ll_rcc.o"
+"./Middlewares/Third_party/LittleFS/lfs.o"
+"./Middlewares/Third_party/LittleFS/lfs_util.o"

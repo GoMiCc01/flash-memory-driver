@@ -22,6 +22,8 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "flash_high_api.h"
+#include "lfs.h"
+#include "lfs_port.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -56,7 +58,9 @@ static void MX_SPI1_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+lfs_t lfs;
+lfs_file_t file;
+flash_handle* my_flash = NULL;
 /* USER CODE END 0 */
 
 /**
@@ -67,7 +71,6 @@ int main(void)
 {
 
   /* USER CODE BEGIN 1 */
-
   /* USER CODE END 1 */
 
   /* MCU Configuration--------------------------------------------------------*/
@@ -90,14 +93,27 @@ int main(void)
   MX_GPIO_Init();
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
-  flash_handle* device = createEntity(&hspi1, CHIP_SELECT_Pin, CHIP_SELECT_GPIO_Port);
-  flash_init(device);
-  uint8_t readbuffer [4] = {0};
-  flash_read(device, 0x00, readbuffer, 4);
-  uint8_t writebuffer [4] = {1,2,3,4};
-  flash_write_data(device, writebuffer, 4, 0x00);
-  flash_read(device, 0x00, readbuffer, 4);
+  my_flash = createEntity(&hspi1, CHIP_SELECT_Pin, CHIP_SELECT_GPIO_Port);
+  if (flash_init(my_flash) == FLASH_OK)
+  {
+	  lfs_port_init(my_flash);
+      int err = lfs_mount(&lfs, &lfs_cfg);
+      if (err != 0)
+      {
+         lfs_format(&lfs, &lfs_cfg);
+         lfs_mount(&lfs, &lfs_cfg);
+      }
 
+//      lfs_file_open(&lfs, &file, "boot_count.txt", LFS_O_RDWR | LFS_O_CREAT);
+//      char msg[] = "System booted!";
+//      lfs_file_write(&lfs, &file, msg, sizeof(msg));
+//      lfs_file_close(&lfs, &file);
+
+      char read_buffer[32] = {0};
+      lfs_file_open(&lfs, &file, "boot_count.txt", LFS_O_RDONLY);
+      lfs_file_read(&lfs, &file, read_buffer, sizeof(read_buffer));
+      lfs_file_close(&lfs, &file);
+  }
   /* USER CODE END 2 */
 
   /* Infinite loop */
