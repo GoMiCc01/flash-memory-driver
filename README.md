@@ -30,6 +30,7 @@ if (flash_init(my_flash) == FLASH_OK) {
     uint8_t read_buffer[64] = {0};
     flash_read(my_flash, 0x000000, read_buffer, sizeof(test_data));
 }  
+```
 
 ## LittleFS Integration (File System)
 This driver is ready to be used with LittleFS right out of the box. A porting layer (`lfs_port.c` / `lfs_port.h`) is provided to link the flash driver with the file system dynamically.
@@ -57,6 +58,7 @@ if (flash_init(my_flash) == FLASH_OK) {
     lfs_file_write(&lfs, &file, "System booted!", 14);
     lfs_file_close(&lfs, &file);
 }  
+```  
 
 ## How to Add to Your Project
 1. Copy the `Components/Flash` folder into your STM32CubeIDE project.
