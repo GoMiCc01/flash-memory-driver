@@ -22,8 +22,10 @@ C_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+Components/Filesystem \
 Components/Flash/Core \
 Core/Src \
 Core/Startup \
 Drivers/STM32G0xx_HAL_Driver/Src \
+Middlewares/Third_party/LittleFS \
 
